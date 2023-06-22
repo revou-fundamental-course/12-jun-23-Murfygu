@@ -1,0 +1,193 @@
+body{
+    background-color: #f9fdff;
+}
+
+header {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #526D82;
+    color:#DDE6ED;
+    margin:12px;
+    padding:1px;
+    border-radius: 10px;
+}
+
+.InputSection{
+    margin:12px 12px 12px 12px;
+    padding: 15px 20px 31px 20px;
+    border-color:#c0cfda;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 40%;
+    float: left;
+    background-color: #DDE6ED;
+    text-align: center;
+    font-size: 25px;
+}
+label {
+    text-align: center;
+    font-weight: bold;
+    color:#526d80;;
+}
+
+input {
+    padding:100px 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color:#c0cfda;
+    border-style: solid;
+    border-width: 3px;
+    width:100%;
+    box-sizing:border-box;
+    font-size:x-large;
+    text-align: center;
+    color:#526d80;
+    font-size: 25px;
+}
+
+input:focus{
+    border-radius: 10px;
+    outline:none;
+    border-color: #6a889d;
+    border-width: 2px;
+}
+
+textarea:focus{
+    border-radius: 10px;
+    outline:none;
+    border-color: #6a889d;
+    border-width: 2px;
+}
+
+.OutputSection{
+    margin:12px 12px 12px 12px;
+    padding: 15px 20px 0px 20px;
+    border-radius: 10px;
+    border-color:#c0cfda;
+    border-style: solid;
+    border-width: 3px;
+    width: 40%;
+    float: right;
+    background-color: #DDE6ED;
+    text-align: center;
+    font-size: 25px;
+}
+
+textarea{
+    padding:85px 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    border-color:#c0cfda;
+    border-style: solid;
+    border-width: 3px;
+    width:100%;
+    box-sizing:border-box;
+    font-size:x-large;
+    text-align: center;
+    color:#526d80;
+    font-size: 25px;
+}
+
+.reverseButton{
+    position: absolute;
+    left:46.5%;
+    right:46.5%;
+    margin-top:150px;
+    width: 7%;
+    height: 8%;
+    border-color: #d0e2ec;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    font-size:large;
+    background-color: #f0f8ff;
+    color:#526d80;
+    cursor: pointer;
+}
+
+.reverseButton:hover{
+    background-color: #e2eff7 ;
+    box-shadow: 0 5px 3px 0 lightgray;
+}
+
+.reverseButton:active{
+    background-color: #b1c9d8;
+    transform: translateY(2px);
+    border-color: #b1c9d8;
+}
+
+.Button {
+    display: flex;
+    flex-direction: column;
+    width:99%;
+    align-self: center;
+    padding-left:7px;
+}
+
+.bottomButton{
+    margin: 5px;
+    height: 30px;
+    padding: 0;
+    border-color: #d0e2ec;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: #f0f8ff;
+    color:#688499;
+    cursor:pointer;
+    letter-spacing: 3px;
+}
+
+.bottomButton:hover{
+    background-color: #e2eff7 ;
+    box-shadow: 0 5px 3px 0 lightgray;
+}
+
+.bottomButton:active{
+    background-color: #b1c9d8;
+    transform: translateY(2px);
+    border-color: #b1c9d8;
+}
+
+.CalculationSection{
+    margin:12px 12px 12px 12px;
+    padding: 15px 20px 20px 20px;
+    border-color:#c0cfda;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    float: center;
+    background-color: #DDE6ED;
+    text-align: center;
+    font-size: 25px;
+}
+
+hr{
+    margin: 45px 12px 20px 12px;
+}
+
+.explanation{
+    margin:0 0 30px 30px;
+    color: #526d80;
+}
+
+@media screen and (max-width: 720px) {
+    .InputSection , .OutputSection{
+        width: 90%;
+        float: center;
+    }
+
+    .reverseButton {
+        position: relative;
+        float: center;
+        left: 35%;
+        right: 35%;
+        margin-top: 0;
+        width: 30%;
+        height: 35px;
+    }
+}
