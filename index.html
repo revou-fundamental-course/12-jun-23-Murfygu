@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Konversi Suhu</title>
+    </head>
+    <body>
+        <header>
+            <h1>Konversi Suhu</h1>
+        </header>
+            <section class="InputSection">
+                <label for="InputField" id="inputLabel">Celcius</label>
+                <input type="number" id="InputField"/>
+            </section>
+                
+            <button class="reverseButton" onclick=reverse()><i class="fa-solid fa-arrows-rotate"></i></button>
+
+            <section class="OutputSection">
+                <label for="OutputField" id="outputLabel">Fahrenheit</label>
+                <textarea id="OutputField"></textarea> 
+                <p id="OutputField"></p>
+            </section>
+            
+            <div class="Button">
+                <button class="bottomButton" id="resetButton" onclick=reset()>Reset</button>
+                <button class="bottomButton" id="convertButton" onclick=convert()>Convert</button>
+            </div>
+
+        <section class="CalculationSection">
+            <label for="CalculationField">Cara kalkulasi</label>
+            <textarea id="CalculationField"></textarea> 
+        </section>
+        <hr>
+        <div class="explanation">
+            <p>Rumus konversi suhu (Celcius dan Fahrenheit)</p>
+            <p>°F = 9/5 (°C) + 32°F</p>
+            <p>°C = 5/9 (°F - 32°F)</p>
+        </div>
+    
+        <script src="JS/script.js"></script>
+    </body>
+
+</html>
